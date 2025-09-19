@@ -197,3 +197,16 @@ select.dt-input {
   width: 60px;
   height: 40px;
 }
+
+/* Fix DataTables pagination styling conflicts with Materialize */
+nav[aria-label="pagination"]  {
+  background-color: white !important;
+  color: #333 !important;
+  border: 1px solid #ddd !important;
+  margin: 0 2px !important;
+}
+
+nav[aria-label="pagination"] .dt-paging-button {
+  color: #333 !important;
+  padding: 0px 10px !important;
+}

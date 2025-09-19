@@ -2,7 +2,7 @@
  * @license
  *
  * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://raw.githubusercontent.com/l-lin/angular-datatables/master/LICENSE
+ * found in the LICENSE file at https://raw.githubusercontent.com/rrrizq/ngx-datatables/master/LICENSE
  */
 
 import { Directive, ElementRef, Input, OnDestroy, OnInit, Renderer2, ViewContainerRef } from '@angular/core';
@@ -100,7 +100,9 @@ export class DataTableDirective implements OnDestroy, OnInit {
 
               // run user specified row callback if provided.
               if (resolvedDTOptions.rowCallback) {
-                resolvedDTOptions.rowCallback(row, data, index);
+                // Call the original rowCallback without binding to preserve DataTables context
+                const originalCallback = resolvedDTOptions.rowCallback as any;
+                return originalCallback(row, data, index);
               }
             }
           };

@@ -17,8 +17,8 @@ We recommend [nvm](https://github.com/creationix/nvm) or [n](https://github.com/
 Clone this repo into new project folder (e.g., `my-proj`).
 
 ```bash
-git clone  https://github.com/l-lin/angular-datatables
-cd angular-datatables
+git clone  https://github.com/rrrizq/ngx-datatables
+cd ngx-datatables
 ```
 
 ## Install npm packages
@@ -131,7 +131,7 @@ npm version major
 npm version 8.3.2
 ```
 
-Then go to the [release page](https://github.com/l-lin/angular-datatables/releases) and manually
+Then go to the [release page](https://github.com/rrrizq/ngx-datatables/releases) and manually
 create a new release. There is an automatic [Github action](./.github/workflows/publish.yml) that
 publishes automatically to NPM repository.
 

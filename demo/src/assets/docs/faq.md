@@ -1,16 +1,17 @@
-> Deprecation of "Angular way" usage
+> Deprecation of "Angular way" usag> 'Warning: Unable to fully load <project> for sourcemap flattening; ENOENT: no such file or directory*'
 
+This has been fixed in newer versions of `ngx-datatables`. Make sure you're using the latest version of the library.
 This was done to address few issues:
 
 1. The usage of `*ngFor` and setting AJAX callback's `data` property as empty, we're essentially tricking the library to consider "non-existent" data. (non-existent because AJAX callback is called with empty array and totalRecords* values don't match)
 
 2. It breaks DT extensions that perform additional data processing like exporting tabular data to a PDF or CSV, etc.
 
-We have introduced better ways to allow same level of control over rendering your data via [TemplateRef](https://l-lin.github.io/angular-datatables/#/advanced/using-template-ref) and [Pipes](https://l-lin.github.io/angular-datatables/#/advanced/using-pipe)
+We have introduced better ways to allow same level of control over rendering your data via [TemplateRef](https://rrrizq.github.io/ngx-datatables/#/advanced/using-template-ref) and [Pipes](https://rrrizq.github.io/ngx-datatables/#/advanced/using-pipe)
 
 > Error encountered resolving symbol values statically.
 
-Please update your `tsconfig.json` as shown below. For more info, check the GitHub issue [here](https://github.com/l-lin/angular-datatables/issues/937)
+Please update your `tsconfig.json` as shown below:
 
 ```json
 {
@@ -27,20 +28,15 @@ Please update your `tsconfig.json` as shown below. For more info, check the GitH
 
 > Columns do not resize when using ColReorder extension
 
-Grab a copy of [this](https://github.com/shanmukhateja/adt-resize-col-demo) project, update it to suit your needs and see if it works.
-If it won't work, check these similar issues:
-- [#1496](https://github.com/l-lin/angular-datatables/issues/1496)
-- [#1485](https://github.com/l-lin/angular-datatables/issues/1485)
-
-If it still didn't work, open a GitHub [issue](https://github.com/l-lin/angular-datatables/issues/new) and we'll look into it. 
+This is a known limitation when using ColReorder with Angular. If you encounter this issue, please check the GitHub repository for community solutions and workarounds. 
 
 > Column data doesn't move with column header when re-ordering
 
-It could be many things but in general it could be because you're using "Angular way" to display data. In this case, look at the suggested changes on this [comment](https://github.com/l-lin/angular-datatables/issues/1496#issuecomment-764692564) 
+This could be because you're using "Angular way" to display data. Check the documentation for proper data binding patterns when using column reordering features. 
 
 > 'Warning: Unable to fully load <project> for sourcemap flattening; ENOENT: no such file or directory* '
 
-This has been fixed in newer version of `angular-datatables`. You can find latest releases for your project's Angular version on [Releases](https://github.com/l-lin/angular-datatables/releases) page.
+This has been fixed in newer version of `ngx-datatables`. You can find latest releases for your project's Angular version on [Releases](https://github.com/rrrizq/ngx-datatables/releases) page.
 
 > 'DataTables warning: table id=xx - Cannot reinitialise DataTable. For more information about this error, please see http://datatables.net/tn/3*'
 
@@ -55,4 +51,3 @@ We highly recommend checking out DataTables.net [documentation](https://datatabl
 
 > Blank screen when using `visible: true` on TemplateRef or Pipes
 
-This is a known issue with the library. Please upgrade to atleast [v15.0.1](https://github.com/l-lin/angular-datatables/releases/tag/v15.0.1) for the fix.

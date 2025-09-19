@@ -1,3 +1,3 @@
 ```bash
-ng add angular-datatables
+ng add ngx-datatables
 ```

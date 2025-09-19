@@ -39,7 +39,7 @@ export class RowClickEventComponent implements OnInit {
       rowCallback: (row: Node, data: any[] | Object, index: number) => {
         const self = this;
         // Unbind first in order to avoid any duplicate handler
-        // (see https://github.com/l-lin/angular-datatables/issues/87)
+        // (see https://github.com/rrrizq/ngx-datatables/issues/87)
         // Note: In newer jQuery v3 versions, `unbind` and `bind` are
         // deprecated in favor of `off` and `on`
         $('td', row).off('click');

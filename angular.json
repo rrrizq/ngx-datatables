@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "",
   "projects": {
-    "angular-datatables-demo": {
+    "ngx-datatables-demo": {
       "root": "demo",
       "sourceRoot": "demo/src",
       "projectType": "application",
@@ -24,12 +24,12 @@
               "demo/src/favicon.png"
             ],
             "styles": [
+              "node_modules/materialize-css/dist/css/materialize.css",
               "node_modules/datatables.net-dt/css/dataTables.dataTables.min.css",
               "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.min.css",
               "node_modules/datatables.net-colreorder-dt/css/colReorder.dataTables.min.css",
               "node_modules/datatables.net-responsive-dt/css/responsive.dataTables.min.css",
               "node_modules/datatables.net-select-dt/css/select.dataTables.min.css",
-              "node_modules/materialize-css/dist/css/materialize.css",
               "node_modules/prism-themes/themes/prism-material-dark.css",
               "demo/src/styles.css",
               "node_modules/prismjs/plugins/toolbar/prism-toolbar.css"
@@ -42,7 +42,6 @@
               "node_modules/datatables.net/js/dataTables.min.js",
               "node_modules/datatables.net-buttons/js/dataTables.buttons.min.js",
               "node_modules/datatables.net-buttons/js/buttons.colVis.min.js",
-              "node_modules/datatables.net-buttons/js/buttons.flash.min.js",
               "node_modules/datatables.net-buttons/js/buttons.html5.min.js",
               "node_modules/datatables.net-buttons/js/buttons.print.min.js",
               "node_modules/datatables.net-colreorder/js/dataTables.colReorder.min.js",
@@ -85,18 +84,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "buildTarget": "angular-datatables-demo:build"
+            "buildTarget": "ngx-datatables-demo:build"
           },
           "configurations": {
             "production": {
-              "buildTarget": "angular-datatables-demo:build:production"
+              "buildTarget": "ngx-datatables-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-datatables-demo:build"
+            "buildTarget": "ngx-datatables-demo:build"
           }
         },
         "test": {
@@ -114,7 +113,6 @@
               "node_modules/jszip/dist/jszip.js",
               "node_modules/datatables.net-buttons/js/dataTables.buttons.js",
               "node_modules/datatables.net-buttons/js/buttons.colVis.js",
-              "node_modules/datatables.net-buttons/js/buttons.flash.js",
               "node_modules/datatables.net-buttons/js/buttons.html5.js",
               "node_modules/datatables.net-buttons/js/buttons.print.js",
               "node_modules/datatables.net-colreorder/js/dataTables.colReorder.js",
@@ -123,12 +121,12 @@
               "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.js"
             ],
             "styles": [
+              "node_modules/materialize-css/dist/css/materialize.css",
               "node_modules/datatables.net-dt/css/dataTables.dataTables.css",
               "node_modules/datatables.net-buttons-dt/css/buttons.dataTables.css",
               "node_modules/datatables.net-colreorder-dt/css/colReorder.dataTables.css",
               "node_modules/datatables.net-responsive-dt/css/responsive.dataTables.css",
               "node_modules/datatables.net-select-dt/css/select.dataTables.css",
-              "node_modules/materialize-css/dist/css/materialize.css",
               "demo/src/styles.css"
             ],
             "assets": [
@@ -144,7 +142,7 @@
         }
       }
     },
-    "angular-datatables": {
+    "ngx-datatables": {
       "root": "lib",
       "sourceRoot": "lib/src",
       "projectType": "library",

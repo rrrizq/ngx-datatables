@@ -1,17 +1,22 @@
-> [!CAUTION]
-> This project is no longer maintained! Feel free to fork it to your needs.
+# ngx-datatables
 
-# Angular DataTables
-
-![build](https://github.com/l-lin/angular-datatables/workflows/build/badge.svg)
-[![npm](https://img.shields.io/npm/v/angular-datatables.svg)][npm-link]
-[![npm](https://img.shields.io/npm/dm/angular-datatables.svg)][npm-link]
+![build](https://github.com/rrrizq/ngx-datatables/workflows/build/badge.svg)
+[![npm](https://img.shields.io/npm/v/ngx-datatables.svg)][npm-link]
+[![npm](https://img.shields.io/npm/dm/ngx-datatables.svg)][npm-link]
 
 > [Angular](https://angular.io/) + [DataTables](https://datatables.net/)
 
+Angular directive for DataTables - supports Angular 20.x and DataTables 2.x
+
 # Documentation
 
-Please check the [online documentation](http://l-lin.github.io/angular-datatables/)
+Please check the [online documentation](https://rrrizq.github.io/ngx-datatables/)
+
+# Installation
+
+```bash
+npm install ngx-datatables
+```
 
 # Versioning
 
@@ -26,5 +31,5 @@ Check the [developer guide](DEVELOPER.md)
 
 [MIT](LICENSE)
 
-[npm-link]: https://www.npmjs.com/package/angular-datatables
+[npm-link]: https://www.npmjs.com/package/ngx-datatables
 

@@ -1,7 +1,7 @@
 ```typescript
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 
-import { DataTableDirective } from 'angular-datatables';
+import { DataTableDirective } from 'ngx-datatables';
 import { Config } from 'datatables.net';
 
 @Component({

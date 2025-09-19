@@ -1,7 +1,7 @@
 ```typescript
 import { CurrencyPipe, UpperCasePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ADTSettings } from 'angular-datatables/src/models/settings';
+import { ADTSettings } from 'ngx-datatables/src/models/settings';
 
 @Component({
   selector: 'app-using-ng-pipe',

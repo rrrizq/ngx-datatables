@@ -4,10 +4,9 @@
 ">(Recommended)</sup></h5>
 
 ```bash
-ng add angular-datatables
+ng add ngx-datatables
 ```
 
-> You can find latest releases on GitHub [here](https://github.com/l-lin/angular-datatables/releases).
 
 ##### Manual Installation
 
@@ -17,7 +16,7 @@ ng add angular-datatables
 npm install jquery --save
 npm install datatables.net --save
 npm install datatables.net-dt --save
-npm install angular-datatables --save
+npm install ngx-datatables --save
 npm install @types/jquery --save-dev
 npm install @types/datatables.net --save-dev
 
@@ -49,7 +48,7 @@ npm install @types/datatables.net --save-dev
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
-import { DataTablesModule } from "angular-datatables";
+import { DataTablesModule } from "ngx-datatables";
 
 import { AppComponent } from "./app.component";
 
